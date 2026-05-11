@@ -265,6 +265,42 @@
   font-weight: 600;
 }
 
+.fav-btn {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--input-border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.fav-btn:hover {
+  background: var(--surface-hover);
+}
+
+.fav-btn--saved {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.favourites {
+  padding: 24px;
+}
+
+.favourites h2 {
+  margin-top: 0;
+  color: var(--text);
+}
+
+.favourites__link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--link);
+  font-weight: 700;
+}
+
 .page-status {
   padding: 24px;
   text-align: center;
