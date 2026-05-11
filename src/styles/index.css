@@ -2,6 +2,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #f5f7fb;
+  --text: #1f2937;
+  --card-bg: #ffffff;
+  --header-bg: #2563eb;
+  --header-text: #ffffff;
+  --input-border: #cbd5e1;
+  --link: rgba(255, 255, 255, 0.95);
+  --muted: #475569;
+  --error: #b91c1c;
+  --surface-hover: #f3f4f6;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card-bg: #1f2937;
+  --header-bg: #0f172a;
+  --header-text: #e2e8f0;
+  --input-border: #334155;
+  --link: #f8fafc;
+  --muted: #94a3b8;
+  --error: #fca5a5;
+  --surface-hover: #111827;
+}
+
 html,
 body {
   margin: 0;
@@ -15,8 +41,8 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  background-color: #f5f7fb;
-  color: #1f2937;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 a {
@@ -25,6 +51,7 @@ a {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
